@@ -1,0 +1,1062 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+     >
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            layout="@layout/activity_title_back" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llayout" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/xxxLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:paddingBottom="0dp" >
+
+                <RelativeLayout
+                    android:id="@+id/xxtzlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.huimv.android.basic.widget.switchButton.SwitchButton
+                        android:id="@+id/xxxkg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp" />
+
+                    <TextView
+                        android:id="@+id/xxtzeditText"
+                        style="@style/TextColorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:text="接收新消息通知"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/lightgray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayoutxxtz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingRight="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/wdlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_qtback_newsms"
+                    android:clickable="false"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <Button
+                        android:id="@+id/wdbtnimg"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xxtz_wendu"
+                        android:gravity="left" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/wdbtnimg"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:id="@+id/wdeditText"
+                        style="@style/TextColorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/wdbtnimg"
+                        android:gravity="left"
+                        android:text="温度"
+                        android:textStyle="normal" />
+
+                    <com.huimv.android.basic.widget.switchButton.SwitchButton
+                        android:id="@+id/wdkg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/wdbtnimg"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wllayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_qtback_newsms"
+                    android:clickable="false"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/wlbtnimg"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/lightgray" />
+
+                    <Button
+                        android:id="@+id/wlbtnimg"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xxtz_wangluo" />
+
+                    <TextView
+                        android:id="@+id/wleditText"
+                        style="@style/TextColorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/wlbtnimg"
+                        android:gravity="left"
+                        android:paddingLeft="2dp"
+                        android:text="网络"
+                        android:textStyle="normal" />
+
+                    <com.huimv.android.basic.widget.switchButton.SwitchButton
+                        android:id="@+id/wlkg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/wlbtnimg"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sjlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_qtback_newsms"
+                    android:clickable="false"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/sjbtnimg"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/lightgray" />
+
+                    <Button
+                        android:id="@+id/sjbtnimg"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xxtz_shijian" />
+
+                    <TextView
+                        android:id="@+id/sjeditText"
+                        style="@style/TextColorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/sjbtnimg"
+                        android:gravity="left"
+                        android:paddingLeft="2dp"
+                        android:text="事件"
+                        android:textStyle="normal" />
+
+                    <com.huimv.android.basic.widget.switchButton.SwitchButton
+                        android:id="@+id/sjkg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/sjbtnimg"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sblayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_qtback_newsms"
+                    android:clickable="false"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/sbbtnimg"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/lightgray" />
+
+                    <Button
+                        android:id="@+id/sbbtnimg"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xxtz_shebei" />
+
+                    <TextView
+                        android:id="@+id/sbeditText"
+                        style="@style/TextColorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/sbbtnimg"
+                        android:gravity="left"
+                        android:paddingLeft="2dp"
+                        android:text="设备"
+                        android:textStyle="normal" />
+
+                    <com.huimv.android.basic.widget.switchButton.SwitchButton
+                        android:id="@+id/sbkg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/sbbtnimg"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tzlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_qtback_newsms"
+                    android:clickable="false"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tzbtnimg"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/lightgray" />
+
+                    <Button
+                        android:id="@+id/tzbtnimg"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xxtz_tizhong" />
+
+                    <TextView
+                        android:id="@+id/tzeditText"
+                        style="@style/TextColorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tzbtnimg"
+                        android:gravity="left"
+                        android:paddingLeft="2dp"
+                        android:text="体重"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/tzbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/textView"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="@drawable/xxts_arrow_right" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayouttz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/qttzlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_qtback_newsms"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/qtbtnimg"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/qtbtnimg"
+                            android:background="@color/lightgray" />
+
+                        <Button
+                            android:id="@+id/qtbtnimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/haifm_icon"
+                            android:visibility="invisible" />
+
+                        <com.huimv.android.basic.widget.switchButton.SwitchButton
+                            android:id="@+id/qttzkg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/qtbtnimg"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/qttzeditText"
+                            style="@style/TextColorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/qtbtnimg"
+                            android:gravity="left"
+                            android:paddingLeft="2dp"
+                            android:text="群体体重"
+                            android:textColor="@color/tmallred"
+                            android:textStyle="normal" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tzbhlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_qtback_newsms"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tzbhbtnimg"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/tzbhbtnimg"
+                            android:background="@color/lightgray" />
+
+                        <Button
+                            android:id="@+id/tzbhbtnimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/haifm_icon"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/tzbheditText"
+                            style="@style/TextColorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/tzbhbtnimg"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:paddingLeft="2dp"
+                            android:text="体重变化"
+                            android:textColor="@color/thumb_apk"
+                            android:textStyle="normal" />
+
+                        <com.huimv.android.basic.widget.switchButton.SwitchButton
+                            android:id="@+id/tzbhkg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/tzbhbtnimg"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tzbhqslayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_qtback_newsms"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tzbhbqstnimg"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/tzbhbqstnimg"
+                            android:background="@color/lightgray" />
+
+                        <Button
+                            android:id="@+id/tzbhbqstnimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/haifm_icon"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/tzbhqseditText"
+                            style="@style/TextColorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/tzbhbqstnimg"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:paddingLeft="2dp"
+                            android:text="体重变化趋势"
+                            android:textColor="@color/thumb_html"
+                            android:textStyle="normal" />
+
+                        <com.huimv.android.basic.widget.switchButton.SwitchButton
+                            android:id="@+id/tzbhqskg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/tzbhbqstnimg"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cltzlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_qtback_newsms"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/cltzbtnimg"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@+id/cltzbtnimg"
+                            android:background="@color/lightgray" />
+
+                        <Button
+                            android:id="@+id/cltzbtnimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/haifm_icon"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/cltzeditText"
+                            style="@style/TextColorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/cltzbtnimg"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:paddingLeft="2dp"
+                            android:text="出栏体重"
+                            android:textColor="@color/thumb_video"
+                            android:textStyle="normal" />
+
+                                               <com.huimv.android.basic.widget.switchButton.SwitchButton
+                            android:id="@+id/cltzkg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/cltzbtnimg"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sllayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_qtback_newsms"
+                    android:clickable="false"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/sltextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/slbtnimg"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/lightgray" />
+
+                    <Button
+                        android:id="@+id/slbtnimg"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xxtz_siliao" />
+
+                    <TextView
+                        android:id="@+id/sleditText"
+                        style="@style/TextColorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/slbtnimg"
+                        android:gravity="left"
+                        android:paddingLeft="2dp"
+                        android:text="饲料"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/slbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/sltextView"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="@drawable/xxts_arrow_right" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayoutsl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/rsllayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_qtback_newsms"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/rslbtnimg"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/rslbtnimg"
+                            android:background="@color/lightgray" />
+
+                        <Button
+                            android:id="@+id/rslbtnimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/haifm_icon"
+                            android:visibility="invisible" />
+
+                        <com.huimv.android.basic.widget.switchButton.SwitchButton
+                            android:id="@+id/rslkg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/rslbtnimg"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/rsleditText"
+                            style="@style/TextColorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/rslbtnimg"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:paddingLeft="2dp"
+                            android:text="日饲料"
+                            android:textColor="@color/tmallred"
+                            android:textStyle="normal" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rslbhlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_qtback_newsms"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/rslbhbtnimg"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/rslbhbtnimg"
+                            android:background="@color/lightgray" />
+
+                        <Button
+                            android:id="@+id/rslbhbtnimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/haifm_icon"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/rslbheditText"
+                            style="@style/TextColorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/rslbhbtnimg"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:paddingLeft="2dp"
+                            android:text="日饲料变化"
+                            android:textColor="@color/thumb_apk"
+                            android:textStyle="normal" />
+
+                        <com.huimv.android.basic.widget.switchButton.SwitchButton
+                            android:id="@+id/rslbhkg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/rslbhbtnimg"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lrblayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_qtback_newsms"
+                    android:clickable="false"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/lrbtextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/lrbbtnimg"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/lightgray" />
+
+                    <Button
+                        android:id="@+id/lrbbtnimg"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xxtz_liaoroubi" />
+
+                    <TextView
+                        android:id="@+id/lrbeditText"
+                        style="@style/TextColorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/lrbbtnimg"
+                        android:gravity="left"
+                        android:paddingLeft="2dp"
+                        android:text="料肉比"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lrbbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/lrbtextView"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="@drawable/xxts_arrow_right" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayoutlrb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/qclrblayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_qtback_newsms"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/qclrbbtnimg"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/qclrbbtnimg"
+                            android:background="@color/lightgray" />
+
+                        <Button
+                            android:id="@+id/qclrbbtnimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/haifm_icon"
+                            android:visibility="invisible" />
+
+                        <com.huimv.android.basic.widget.switchButton.SwitchButton
+                            android:id="@+id/qclrbkg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/qclrbbtnimg"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/qclrbeditText"
+                            style="@style/TextColorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/qclrbbtnimg"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:paddingLeft="2dp"
+                            android:text="全程料肉比"
+                            android:textColor="@color/tmallred"
+                            android:textStyle="normal" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/qclrbbhlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_qtback_newsms"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/qclrbbhbtnimg"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/qclrbbhbtnimg"
+                            android:background="@color/lightgray" />
+
+                        <Button
+                            android:id="@+id/qclrbbhbtnimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/haifm_icon"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/qclrbbheditText"
+                            style="@style/TextColorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/qclrbbhbtnimg"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:paddingLeft="2dp"
+                            android:text="全程料肉比变化"
+                            android:textColor="@color/thumb_apk"
+                            android:textStyle="normal" />
+
+                        <com.huimv.android.basic.widget.switchButton.SwitchButton
+                            android:id="@+id/qclrbbhkg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/qclrbbhbtnimg"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fwlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_qtback_newsms"
+                    android:clickable="false"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/fwtextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/fwbtnimg"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/lightgray" />
+
+                    <Button
+                        android:id="@+id/fwbtnimg"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xxtz_fangwen" />
+
+                    <TextView
+                        android:id="@+id/fweditText"
+                        style="@style/TextColorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/fwbtnimg"
+                        android:gravity="left"
+                        android:paddingLeft="2dp"
+                        android:text="访问"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/fwbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/fwtextView"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="@drawable/xxts_arrow_right" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayoutfw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/qtrpjfwlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_qtback_newsms"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/qtrpjfwbtnimg"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/qtrpjfwbtnimg"
+                            android:background="@color/lightgray" />
+
+                        <Button
+                            android:id="@+id/qtrpjfwbtnimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/haifm_icon"
+                            android:visibility="invisible" />
+
+                        <com.huimv.android.basic.widget.switchButton.SwitchButton
+                            android:id="@+id/qtrpjfwkg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/qtrpjfwbtnimg"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/qtrpjfweditText"
+                            style="@style/TextColorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/qtrpjfwbtnimg"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:paddingLeft="2dp"
+                            android:text="群体日平均访问"
+                            android:textColor="@color/tmallred"
+                            android:textStyle="normal" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/qtrpjfwbhlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_qtback_newsms"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/qtrpjfwbhbtnimg"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/qtrpjfwbhbtnimg"
+                            android:background="@color/lightgray" />
+
+                        <Button
+                            android:id="@+id/qtrpjfwbhbtnimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/haifm_icon"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/qtrpjfwbheditText"
+                            style="@style/TextColorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/qtrpjfwbhbtnimg"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:paddingLeft="2dp"
+                            android:text="群体日平均访问变化"
+                            android:textColor="@color/thumb_apk"
+                            android:textStyle="normal" />
+
+                        <com.huimv.android.basic.widget.switchButton.SwitchButton
+                            android:id="@+id/qtrpjfwbhkg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/qtrpjfwbhbtnimg"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/sfwlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_qtback_newsms"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/sfwbtnimg"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/sfwbtnimg"
+                            android:background="@color/lightgray" />
+
+                        <Button
+                            android:id="@+id/sfwbtnimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/haifm_icon"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/sfweditText"
+                            style="@style/TextColorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/sfwbtnimg"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:paddingLeft="2dp"
+                            android:text="时访问"
+                            android:textColor="@color/thumb_html"
+                            android:textStyle="normal" />
+
+                        <Button
+                            android:id="@+id/sfwkg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/bg_settings_drag_on" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

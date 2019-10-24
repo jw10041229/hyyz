@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">慧牧开放平台Sdk演示程序</string>
+    <string name="app_name">数字牧场</string>
+    <string name="up">绑定sdk</string>
+    <string name="down">解绑sdk</string>
+    <string name="no_clientid">(none)</string>
+    <string name="start">启动</string>
+    <string name="stop">停止</string>
+    <string name="clear">清除日志</string>
+    <string name="enablelog">开启debug日志</string>
+    <string name="bindcell">绑定手机号</string>
+    <string name="pmsg">透传测试</string>
+    <string name="psmsg">通知栏测试</string>
+    <string name="begin">开始(h)</string>
+    <string name="end">结束</string>
+    <string name="duration">持续时间(h)</string>
+    <string name="set_heartbeat">心跳间隔(s)</string>
+    <string name="send_msg">发送消息</string>
+    <string name="bind_alias">绑定别名</string>
+    <string name="unbind_alias">解除别名绑定</string>
+    <string name="current_bbh">当前版本号:</string>
+    
+    <string name="load_account">账号：</string>
+    <string name="load_password">密码：</string>
+    <string name="reset_password">重置密码</string>
+    <string name="load_submit">登录</string>
+     <string name="visit_submit">访客登录</string>
+     <string name="visit_account">访客</string>
+    <string name="exit_account">退出账号</string>
+    <string name="back">返回</string>
+    <string name="erwemasaomiao">二维码扫描</string>
+    <string name="app_erweima">安卓app二维码</string>
+    <string name="right_title">账户详情</string>
+    <string name="right_title_touxiang">头像</string>
+    <string name="right_title_nicheng">昵称</string>
+    <string name="right_title_erweima_app">APP二维码</string>
+    <string name="right_title_yundunjieruqi">云端接入器注册</string>
+    <string name="need_lbs_permission_hint">需要定位权限</string>
+    <string name="right_title_muchangshezhi">牧场设置</string>
+    <string name="nicheng_notNull">昵称不能为空</string>
+    <string name="visit_not_modify">游客不允许更改昵称</string>
+    <string name="nicheng_tixing">设置后,其他人将看到你的昵称</string>
+     <string name="shoujihao_tixing">一个手机号只能作为一个登陆账号</string>
+    <string name="right_title_zhanghu">账户</string>
+    <string name="right_title_shoujihao">手机号</string>
+     <string name="shoujihao_notNull">手机号不能为空</string>
+     <string name="shoujihao_notFill">手机号不合法</string>
+    <string name="right_title_mimashezhi">密码设置</string>
+    <string name="right_title_xiaoxituizhi">消息通知</string>
+    <string name="right_title_saoyisao">扫一扫</string>
+     <string name="right_title_erweima">二维码</string>
+     
+     <!--注册-->
+      <string name="register_zhuanghu">账户</string>
+       <string name="register_zhuanghu_notNull">账户不能为空</string>
+      <string name="register_password">密码</string>
+      <string name="register_oldpassword">原密码</string>
+       <string name="register_newpassword">新密码</string>
+      <string name="register_zhuanghu_hint">请输入账号</string>
+      <string name="register_zhuanghu_not_modify">注册成功将无法更改</string>
+      <string name="register_zhuce_button">注册</string>
+      <string name="register_zhuce_new">新注册用户</string>
+      <string name="register_nicheng_hint">请输入昵称</string>
+      <string name="register_shoujihao_hint">请输入手机号</string>
+      <string name="register_yanzhengma">验证码</string>
+      <string name="register_yanzhengma_hint">请输入验证码</string>
+      <string name="register_yanzhengma_send">发送验证码</string>
+      <string name="register_yanzhengma_notNull">验证码不能为空</string>
+      <string name="register_password_confirm">确认密码</string>
+      <string name="register_password_hint">请输入密码</string>
+      <string name="register_oldpassword_hint">请输入原密码</string>
+      <string name="register_newpassword_hint">请输入新密码</string>
+      <string name="register_password_hint_again">请再次输入密码</string>
+      <string name="register_newpassword_hint_again">请再次输入新密码</string>
+      <string name="register_confimPassword_notNull">确认密码不能为空</string>
+      <string name="register_newPassword_notNull">新密码不能为空</string>
+      <string name="register_shoujihao_right">请输入正确的手机号码</string>
+      <string name="register_mima_notFill">两次密码不一致,请重新输入</string>
+       <string name="register_mima_6">密码长度小于6</string>
+       <string name="register_nicheng_length">昵称长度大于</string>
+       <!--找回密码-->
+       <string name="findP_password_confirm">确认新密码</string>
+       <string name="findP_password_down_button">完成</string>
+        <string name="findP_password_title">找回密码</string>
+        <string name="modify_password_title">修改密码</string>
+        <!-- 设置头像 -->
+         <string name="sztx_title">设置头像</string>
+       <!-- 设置头像 -->
+    <string name="mcsz_zzrlzdrl">种猪入栏日龄:</string>
+    <string name="mcsz_zdrl">最大日龄</string>
+    <string name="mcsz_zxrl">最小日龄</string>
+    <string name="mcsz_zcrl">最长日龄</string>
+    <string name="mcsz_zduanrl">最短日龄</string>
+    <string name="mcsz_zcsj">最长时间</string>
+    <string name="mcsz_zduansj">最短时间</string>
+
+    <string name="mcsz_zdts">最大头数</string>
+    <string name="mcsz_zxts">最小头数</string>
+    <string name="mcsz_scpzrl">首次配种日龄:</string>
+    <string name="mcsz_sccjrl">首次采精日龄:</string>
+    <string name="mcsz_rssbfqzdsj">妊娠失败反情最长时间:</string>
+    <string name="mcsz_dncqpzzdrl">断奶后重新配种最大日龄:</string>
+
+    <string name="mcsz_pzhrssj">配种后妊娠时间:</string>
+    <string name="mcsz_pzhfmsj">配种后分娩时间:</string>
+    <string name="mcsz_fmhdnsj">分娩后断奶时间:</string>
+    <string name="mcsz_ttgzrl">淘汰公猪日龄:</string>
+    <string name="mcsz_ttmzrl">淘汰母猪日龄:</string>
+    <string name="mcsz_dnts">断奶头数:</string>
+    <string name="mcsz_unit">天</string>
+
+    <string name="btInventory">开始识别</string>
+    <string name="title_stop_Inventory">停止识别</string>
+    <string name="uhf_msg_inventory_fail">识别失败</string>
+    <string name="uhf_msg_inventory_stop_fail">停止识别标签失败</string>
+    <string name="uhf_msg_inventory_open_fail">开启识别标签失败</string>
+    <string name="uhf_msg_set_frequency_fail">设置频率失败</string>
+    <string name="uhf_msg_set_frequency_succ">设置频率成功</string>
+    <string name="uhf_msg_read_frequency_fail">读取频率失败</string>
+    <string name="uhf_msg_read_frequency_succ">读取频率成功</string>
+
+</resources>

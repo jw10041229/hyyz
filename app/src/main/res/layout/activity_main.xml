@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0sp"
+    android:paddingLeft="0sp"
+    android:paddingRight="0sp"
+    android:paddingTop="0sp"
+    tools:context=".HostActivity" >
+  <LinearLayout
+        android:id="@+id/mianLinearLayout" 
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" >
+        <include layout="@layout/main_navigationbar"/>
+    </LinearLayout>
+    
+    <!-- <ProgressBar  
+        android:id="@+id/mProgressBar"  
+        style="?android:attr/progressBarStyleHorizontal"  
+        android:layout_width="fill_parent"  
+        android:layout_height="2dip"  
+        android:indeterminateOnly="false"  
+        android:max="100"  
+         android:layout_below="@id/mianLinearLayout" 
+        android:progressDrawable="@drawable/webview_progress_bar_states" >  
+    </ProgressBar> 
+    
+    <WebView
+        android:id="@+id/mainWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/mProgressBar" /> -->
+        
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+         android:layout_below="@id/mianLinearLayout"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <Button
+        android:id="@+id/BtInventory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:text="@string/btInventory"
+        android:textColor="@color/white" />
+</RelativeLayout>
+

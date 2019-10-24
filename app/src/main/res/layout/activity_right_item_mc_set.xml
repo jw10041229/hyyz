@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_activity_title_back"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        layout="@layout/activity_title_back"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_zzrlzdrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_right_menu_item_bg"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_zzrlzdrl"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="2dp"
+                android:text="@string/mcsz_zzrlzdrl"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/et_zzrlzdrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_zzrlzdrl"
+                android:layout_toRightOf="@+id/tv_zzrlzdrl"
+                android:layout_toLeftOf="@+id/tv_unit1"
+                android:background="@drawable/editview_bg"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/lightblue2"
+                android:hint="@string/mcsz_zdrl"
+                android:gravity="center"
+                android:textSize="15sp">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_unit1"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/mcsz_unit"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_scpzrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_right_menu_item_bg"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_scpzrl"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="2dp"
+                android:text="@string/mcsz_scpzrl"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/et_scpzzxrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_scpzrl"
+                android:layout_toLeftOf="@+id/tv_unit2"
+                android:layout_toRightOf="@+id/tv_scpzrl"
+                android:background="@drawable/editview_bg"
+                android:gravity="center"
+                android:hint="@string/mcsz_zxrl"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/lightblue2"
+                android:textSize="15sp">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_unit2"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/mcsz_unit"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_rssbfqzdsj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_right_menu_item_bg"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_rssbfqsj"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="2dp"
+                android:text="@string/mcsz_rssbfqzdsj"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                />
+
+            <EditText
+                android:id="@+id/et_rssbfqzdsj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_rssbfqsj"
+                android:layout_toRightOf="@+id/tv_rssbfqsj"
+                android:layout_toLeftOf="@+id/tv_unit31"
+                android:background="@drawable/editview_bg"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/lightblue2"
+                android:hint="@string/mcsz_zcsj"
+                android:gravity="center"
+                android:textSize="15sp">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_unit31"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/mcsz_unit"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_dnhcqpzzdsj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_right_menu_item_bg"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_dncqpzzdrl"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="2dp"
+                android:text="@string/mcsz_dncqpzzdrl"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                />
+
+            <EditText
+                android:id="@+id/et_dncqpzzdrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_dncqpzzdrl"
+                android:layout_toRightOf="@+id/tv_dncqpzzdrl"
+                android:layout_toLeftOf="@+id/tv_unit32"
+                android:background="@drawable/editview_bg"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/lightblue2"
+                android:hint="@string/mcsz_zdrl"
+                android:gravity="center"
+                android:textSize="15sp">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_unit32"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/mcsz_unit"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sccjrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_right_menu_item_bg"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_sccjrl"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="2dp"
+                android:text="@string/mcsz_sccjrl"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/et_sccjzxrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_sccjrl"
+                android:layout_toLeftOf="@+id/tv_unit3"
+                android:layout_toRightOf="@+id/tv_sccjrl"
+                android:background="@drawable/editview_bg"
+                android:gravity="center"
+                android:hint="@string/mcsz_zxrl"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/lightblue2"
+                android:textSize="15sp">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_unit3"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/mcsz_unit"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_pzhrssj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_right_menu_item_bg"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_pzhrs"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="2dp"
+                android:text="@string/mcsz_pzhrssj"
+                android:textStyle="normal" />
+            <LinearLayout
+                android:id="@+id/ll_pzhrs"
+                android:layout_toRightOf="@+id/tv_pzhrs"
+                android:layout_toLeftOf="@+id/tv_unit4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_pzhzcrs"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/editview_bg"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/lightblue2"
+                android:hint="@string/mcsz_zcsj"
+                android:gravity="center"
+                android:textSize="15sp"/>
+            <EditText
+                android:id="@+id/et_pzhzdrs"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/editview_bg"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/lightblue2"
+                android:hint="@string/mcsz_zduansj"
+                android:gravity="center"
+                android:textSize="15sp">
+            </EditText>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_unit4"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/mcsz_unit"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_fzhfmsj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_right_menu_item_bg"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_pzhfmrl"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="2dp"
+                android:text="@string/mcsz_pzhfmsj"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/ll_fzhrq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_unit5"
+                android:layout_toRightOf="@+id/tv_pzhfmrl"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_pzhfmzcrq"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/editview_bg"
+                    android:gravity="center"
+                    android:hint="@string/mcsz_zcsj"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@color/lightblue2"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_pzhfmzdrq"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/editview_bg"
+                    android:gravity="center"
+                    android:hint="@string/mcsz_zduansj"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@color/lightblue2"
+                    android:textSize="15sp"></EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_unit5"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/mcsz_unit"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_fmhdnsj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_right_menu_item_bg"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_fmhdnsj"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="2dp"
+                android:text="@string/mcsz_fmhdnsj"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/ll_fmhdnrq"
+                android:layout_toRightOf="@+id/tv_fmhdnsj"
+                android:layout_toLeftOf="@+id/tv_unit6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/et_fmhzddnrq"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/editview_bg"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@color/lightblue2"
+                    android:hint="@string/mcsz_zcsj"
+                    android:gravity="center"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/et_fmhzxdnrq"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/editview_bg"
+                    android:gravity="center"
+                    android:hint="@string/mcsz_zduansj"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@color/lightblue2"
+                    android:textSize="15sp"></EditText>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_unit6"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/mcsz_unit"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_ttgzrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_right_menu_item_bg"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_ttgzrl"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="2dp"
+                android:text="@string/mcsz_ttgzrl"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/et_ttgzzcrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_ttgzrl"
+                android:layout_toRightOf="@+id/tv_ttgzrl"
+                android:layout_toLeftOf="@+id/tv_unit7"
+                android:background="@drawable/editview_bg"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/lightblue2"
+                android:hint="@string/mcsz_zcrl"
+                android:gravity="center"
+                android:textSize="15sp">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_unit7"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/mcsz_unit"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ttmzrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_right_menu_item_bg"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_ttmzrl"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="2dp"
+                android:text="@string/mcsz_ttmzrl"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/et_ttmzzcrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_ttmzrl"
+                android:layout_toLeftOf="@+id/tv_unit71"
+                android:layout_toRightOf="@+id/tv_ttmzrl"
+                android:background="@drawable/editview_bg"
+                android:gravity="center"
+                android:hint="@string/mcsz_zcrl"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/lightblue2"
+                android:textSize="15sp">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_unit71"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/mcsz_unit"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_dnts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_right_menu_item_bg"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_dnts"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="2dp"
+                android:text="@string/mcsz_dnts"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/ll_dnts"
+                android:layout_toRightOf="@+id/tv_dnts"
+                android:layout_toLeftOf="@+id/tv_unit8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/et_zddnts"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/editview_bg"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@color/lightblue2"
+                    android:hint="@string/mcsz_zdts"
+                    android:gravity="center"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/et_zxdnts"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/editview_bg"
+                    android:gravity="center"
+                    android:hint="@string/mcsz_zxts"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@color/lightblue2"
+                    android:textSize="15sp"></EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_unit8"
+                style="@style/TextColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/mcsz_unit"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

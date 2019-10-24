@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/mmtitle_bg_alpha" >
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="70dp"
+        android:text="返回"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dip" />
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_back"
+        android:layout_alignBottom="@+id/button_back"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="二维码扫描"
+        android:visibility="visible"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:layout_alignBaseline="@+id/button_back"
+        android:text="刷新"
+        android:layout_alignBottom="@+id/button_save"
+        android:layout_toStartOf="@+id/button_save" />
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_back"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:text="保存"
+        android:background="@null"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/button_back" />
+
+</RelativeLayout>
