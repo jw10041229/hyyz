@@ -20,8 +20,8 @@ android {
         applicationId "com.huimv.szmc"
         minSdkVersion 18
         targetSdkVersion 22
-        versionCode 1
-        versionName "V1.0.0.1"
+        versionCode 3
+        versionName "V1.0.0.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [
                 GETUI_APP_ID : "WeAMRkV2md9kTcWM9qip83",
@@ -48,7 +48,7 @@ android {
         variant.outputs.all {
             def vName = defaultConfig.versionName
             def buildType = variant.buildType.name
-            outputFileName = "HAIFM_${vName}_${buildType}_${releaseTime()}.apk"
+            outputFileName = "szmc_${vName}_${buildType}_${releaseTime()}.apk"
         }
 
     }
@@ -84,26 +84,26 @@ def buildSign() {
     return buildProperties
 }
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.2.1'
-    compile 'pub.devrel:easypermissions:0.3.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.orhanobut:logger:1.3'
-    compile 'com.makeramen:roundedimageview:2.1.1'
-    compile 'com.github.lzyzsd:jsbridge:1.0.4'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.android.support:appcompat-v7:25.2.1'
+    implementation 'pub.devrel:easypermissions:0.3.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.orhanobut:logger:1.3'
+    implementation 'com.makeramen:roundedimageview:2.1.1'
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
     implementation 'org.greenrobot:eventbus:3.1.1'
     //bugly
     implementation 'com.tencent.bugly:crashreport_upgrade:1.4.1'
     implementation 'com.tencent.bugly:nativecrashreport:3.7.1'
-    testCompile 'junit:junit:4.12'
-    compile project(':slidelibrary')
-    compile project(':base-library')
-    compile files('libs/json_simple-1.1.jar')
-    compile files('libs/ksoap2-android-assembly-2.5.4-jar-with-dependencies.jar')
-    compile files('libs/universal-image-loader-1.8.4.jar')
-    compile files('libs/zxing3.1.jar')
+    testImplementation 'junit:junit:4.12'
+    implementation project(':slidelibrary')
+    implementation project(':base-library')
+    implementation files('libs/json_simple-1.1.jar')
+    implementation files('libs/ksoap2-android-assembly-2.5.4-jar-with-dependencies.jar')
+    implementation files('libs/universal-image-loader-1.8.4.jar')
+    implementation files('libs/zxing3.1.jar')
 }

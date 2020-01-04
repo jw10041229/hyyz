@@ -7,8 +7,8 @@ public interface XtAppConstant {
 	//String SERVICE_IP = "192.168.1.180:8080";//服务器IP
 	//String SERVICE_IP = "120.26.91.137:8084";//阿里云服务器IP
 	//String SERVICE_IP = "www.ifarmcloud.com";
-	String SERVICE_IP = "192.168.1.159:8080";//服务器IP
-	//String SERVICE_IP = "122.112.219.87:8081";
+	//String SERVICE_IP = "192.168.1.58:8080";//服务器IP
+	String SERVICE_IP = "115.233.231.94:7080";
 	//String webViewUrl = "http://192.168.1.60:8080/ifm/login.htm?type=1";
 	//String webViewUrl = "http://122.112.219.87/ifm/login.htm?type=5";
 	String yzzsEwmUrl = "http://122.112.219.87:8089/download/YZZSewm.png";
