@@ -45,7 +45,7 @@ public class MianWebviewFragment extends BaseFragment{
         mSpUtil = HaifmPApplication.getInstance().getSpUtil();
         String type = XtAppConstant.type2;
         String accoutParma = "/login.htm";
-        initWebView("http://122.112.212.35/hyAppyield/#/");
+        initWebView("http://hzsheep.ifarmcloud.com/hyAppyield/#/");
         return view;
     }
 
